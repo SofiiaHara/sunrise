@@ -1,0 +1,44 @@
+<div class="wrap">
+  <div class="sun"></div>
+  <div class="monolith"></div>
+</div>
+
+  html
+  box-sizing: border-box
+  
+*, *:after, *:before
+  box-sizing: border-box
+
+body
+  margin: 0
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  
+.wrap
+  width: 250px
+  height: 250px
+  background-color: #B7342A
+  position: relative
+  perspective: 100px
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, .26)
+  
+.sun
+  width: 90px
+  height: 90px
+  background-color: #DEE4D1
+  border-radius: 50%
+  left: 50%
+  position: absolute
+  transform: translateX(-50%) translateY(-50%)
+  top: 35%
+  
+.monolith
+  position: absolute
+  height: 100px
+  width: 100%
+  border-bottom: 150px solid #221F29
+  border-left: 110px solid transparent
+  border-right: 110px solid transparent
+  bottom: 0
